@@ -63,7 +63,6 @@ void	test_ft_isprint(void)
 	printf("Tous les tests pour ft_isprint sont passes \n");
 }
 
-
 int	main(void)
 {
 	test_ft_isalpha();
