@@ -16,6 +16,7 @@ SRC = \
 	ft_strncmp.c \
 	ft_strnstr.c \
 	ft_strrchr.c
+
 OBJ = $(SRC:.c=.o)
 
 
@@ -33,6 +34,4 @@ clean :
 fclean : clean
 	rm -rf $(NAME)
 
-re :
-	fclean
-	all
+re : fclean all

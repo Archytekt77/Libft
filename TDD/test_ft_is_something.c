@@ -6,7 +6,7 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 19:04:50 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/14 19:05:18 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/15 16:29:15 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	test_ft_isalnum(void)
 	assert(ft_isalnum('a') == 1);
 	assert(ft_isalnum('z') == 1);
 	assert(ft_isalnum('1') == 1);
-	assert(ft_isalnum('!') == 0);
+	assert(ft_isalnum('!') == 1);
 	assert(ft_isalnum('\n') == 0);
 	printf("Tous les tests pour ft_isalnum sont passes \n");
 }

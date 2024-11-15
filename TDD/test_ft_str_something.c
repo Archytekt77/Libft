@@ -6,7 +6,7 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 19:05:02 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/14 19:05:15 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/15 15:08:07 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ void	test_ft_strncmp(void)
 	assert(ft_strncmp("Hello", "HelloWorld", 10) == -87);
 	// Test special characters
 	assert(ft_strncmp("Hello!", "Hello!", 6) == 0);
-	assert(ft_strncmp("Hello!", "Hello?", 6) == -1);
+	assert(ft_strncmp("Hello!", "Hello?", 6) == -30);
 	// Test length of 0
 	assert(ft_strncmp("Hello", "World", 0) == 0);
 	// Test non-printable characters
