@@ -6,7 +6,7 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 19:00:02 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/14 19:04:03 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/19 17:04:52 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
+	if (size == 0)
+		return (ft_strlen(src));
 	while (i < (size - 1) && src[i])
 	{
 		dst[i] = src[i];
