@@ -1,30 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/20 18:27:06 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/21 16:49:39 by lmaria           ###   ########.fr       */
+/*   Created: 2024/11/21 15:10:22 by lmaria            #+#    #+#             */
+/*   Updated: 2024/11/21 15:11:05 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *nptr)
-{
-	int	i;
-	int	sign;
-	int	result;
+#include "libft.h"
 
-	i = 0;
-	sign = 1;
-	result = 0;
-	while ((nptr[i] >= '\t' && nptr[i] <= '\r') || nptr[i] == ' ')
-		i++;
-	if (nptr[i] == '+' || nptr[i] == '-')
-		if (nptr[i++] == '-')
-			sign = -sign;
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-		result = result * 10 + (nptr[i++] - '0');
-	return (result * sign);
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
 }
