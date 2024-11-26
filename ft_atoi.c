@@ -6,9 +6,11 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 18:27:06 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/21 16:49:39 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/26 18:29:57 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <limits.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -25,6 +27,8 @@ int	ft_atoi(const char *nptr)
 		if (nptr[i++] == '-')
 			sign = -sign;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
 		result = result * 10 + (nptr[i++] - '0');
+	}
 	return (result * sign);
 }

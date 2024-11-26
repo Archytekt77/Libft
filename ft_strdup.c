@@ -6,15 +6,15 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 19:59:02 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/20 20:01:21 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/26 18:26:16 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-    int		i;
+	int		i;
 	char	*dup;
 	int		length;
 
