@@ -6,47 +6,31 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 14:05:37 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/21 16:43:25 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/28 15:36:21 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_total_length(char **strs, int size)
-{
-	int	i;
-	int	length;
-
-	i = 0;
-	length = 0;
-	while (i < size)
-	{
-		length = length + ft_strlen(strs[i]);
-		i++;
-	}
-	length = length + (size - 1) * ft_strlen() + 1;
-	return (length);
-}
-
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-    char   *str;
+	char	*result;
+	size_t	len_s1;
+	size_t	len_s2;
+	size_t	i;
 
-    str = ft_strlcat(s1, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
-
-    
-
+	if (!s1 || !s2)
+		return (NULL);
+	len_s1 = ft_strlen(s1);
+	len_s2 = ft_strlen(s2);
+	result = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
+	if (!result)
+		return (NULL);
+	i = 0;
+	while (*s1)
+		result[i++] = *s1++;
+	while (*s2)
+		result[i++] = *s2++;
+	result[i] = '\0';
+	return (result);
 }
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char	*strs;
-	char	*sep;
-
-	strs = {"Hello", "World", "!"};
-	sep = " ";
-	printf("%s", ft_strjoin(11, *strs, sep));
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:46:28 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/20 17:40:03 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/28 21:29:16 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
-	if (!d && !s)
-		return (NULL);
 	if (d < s)
 	{
 		while (n--)

@@ -6,22 +6,24 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 18:59:51 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/22 13:12:42 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/28 15:54:02 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	unsigned char	ch;
+	int				i;
 
+	ch = (unsigned char)c;
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == (char)c)
+		if (s[i] == ch)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (c == '\0' && s[i] == '\0')
+	if (ch == '\0' && s[i] == '\0')
 		return ((char *)&s[i]);
 	return (0);
 }
