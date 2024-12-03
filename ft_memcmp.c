@@ -6,7 +6,7 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:50:13 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/28 21:26:12 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/12/03 12:17:40 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-// int	main(void)
-// {
-// 	const char	str1[] = "Hello, World!";
-// 	const char	str2[] = "Hello, World!";
-// 	const char	str3[] = "Hello, 42!";
-// 	int			result;
-
-// 	result = ft_memcmp(str1, str2, 13);
-// 	printf("Comparison result (str1 vs str2): %d\n", result);
-// 	result = ft_memcmp(str1, str3, 13);
-// 	printf("Comparison result (str1 vs str3): %d\n", result);
-// 	return (0);
-// }

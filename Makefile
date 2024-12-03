@@ -6,13 +6,13 @@
 #    By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/28 13:25:14 by lmaria            #+#    #+#              #
-#    Updated: 2024/11/28 20:49:29 by lmaria           ###   ########.fr        #
+#    Updated: 2024/12/03 12:19:26 by lmaria           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 .PHONY : all clean fclean re bonus
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Werror -Wextra
 NAME = libft.a
 SRC = \

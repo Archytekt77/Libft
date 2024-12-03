@@ -6,7 +6,7 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 19:59:02 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/26 18:26:16 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/12/03 12:18:51 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
-
-// int	main(void)
-// {
-// 	char	str[] = "azerty";
-
-// 	printf("La str est : %s\n", strdup(str));
-// 	printf("La str est : %s\n", ft_strdup(str));
-// 	return (0);
-// }

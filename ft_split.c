@@ -6,7 +6,7 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 13:21:03 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/28 16:09:28 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/11/29 14:50:54 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,8 +86,6 @@ char	**ft_split(char const *s, char c)
 	char	**result;
 	size_t	words;
 
-	if (!s)
-		return (NULL);
 	words = count_words(s, c);
 	result = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!result)

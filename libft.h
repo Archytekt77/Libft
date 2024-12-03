@@ -6,13 +6,14 @@
 /*   By: lmaria <lmaria@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 19:00:21 by lmaria            #+#    #+#             */
-/*   Updated: 2024/11/28 13:30:06 by lmaria           ###   ########.fr       */
+/*   Updated: 2024/12/03 12:19:59 by lmaria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
 
